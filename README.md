@@ -26,18 +26,18 @@ pip install requests bottle
 
 ### Setting up the Webhook for telegram API
 1. We need to start ngrok and get the **https** public IP address that will be forwarding to our localhost server. Run the following command in the directory of ngrok.exe. 
-```
-ngrok http 5000
-```
-Copy the *https* public IP address from the output and keep ngrok running. This IP addressed are randomly assigned and they change each time we start and stop ngrok hence we need to maybe need to repeat the set up for the webhook everytime it changes.
+    ```
+    ngrok http 5000
+    ```
+    Copy the *https* public IP address from the output and keep ngrok running. This IP addressed are randomly assigned and they change each time we start and stop ngrok hence we need to maybe need to repeat the set up for the webhook everytime it changes.
 
 2. Next, simple go to your browser and in the input bar enter this
- ```
- https://api.telegram.org/bot<Your Bot Accees Token>/setWebHook?url=https://<Public IP address from ngrok>. 
- ```
- If successfully setup there should be an response with a ok message.
+    ```
+    https://api.telegram.org/bot<Your Bot Accees Token>/setWebHook?url=https://<Public IP address from ngrok>. 
+    ```
+     If successfully setup there should be an response with a ok message.
 
-*Note: you can check the status of your webhook with https://api.telegram.org/bot[Your Bot Accees Token]/getWebHookInfo*
+    *Note: you can check the status of your webhook with https://api.telegram.org/bot[Your Bot Accees Token]/getWebHookInfo*
 
 ### Running the Bot Locally
 Finally, we can now run our bot locally. Simple go to the program directory and enter the following command
