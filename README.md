@@ -29,11 +29,11 @@ pip install requests bottle
     ```
     ngrok http 5000
     ```
-    Copy the *https* public IP address from the output and keep ngrok running. This IP addressed are randomly assigned and they change each time we start and stop ngrok hence we need to maybe need to repeat the set up for the webhook everytime it changes.
+    Copy the *https* public IP address from the output and keep ngrok running. This IP addressed are randomly assigned and they change each time we start and stop ngrok hence, we need to repeat the set up for the webhook everytime it changes.
 
 2. Next, simple go to your browser and in the input bar enter this
     ```
-    https://api.telegram.org/bot<Your Bot Accees Token>/setWebHook?url=https://<Public IP address from ngrok>. 
+    https://api.telegram.org/bot<Your Bot Accees Token>/setWebHook?url=https://<Public IP address from ngrok>
     ```
      If successfully setup there should be an response with a ok message.
 
