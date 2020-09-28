@@ -1,4 +1,4 @@
-# telegram_bill-splitting-calculator-bot
+# Telegram Bill Splitting Calculator bot
 This project is used for creating a telegram bot for the purposes of spilting a bill between a group of people. This telegram bot can be deploy to Heroku and makes use of webhooks for communicating with the telegram API.
 
 ## Local Setup
